@@ -7,7 +7,7 @@ const HexList = ({ prefix, swatchData }) => {
             <ul>
                 {swatchData.map((swatch, index) => (
                     <li key={index} className="mb-2">
-                        {`"${prefix ? '--' + prefix : '--color'}${index + 1}": "${swatch.hexColor}",`}
+                        {`"${prefix ? prefix : 'color'}${index + 1}": "${swatch.hexColor}",`}
                     </li>
                 ))}
             </ul>
